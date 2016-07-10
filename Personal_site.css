@@ -1,24 +1,5 @@
 /*COLORS: White:#FFFFFF Blue:#B8C7CD Green:#373832 Red:#804B4D Lt Brown:#A68A72 Olive */
 
-input.MyButton {
-padding:.25em 1em 0 1em;
-margin:0 1em;
-font-size: 1rem;
-font-family: fantasy;
-background: gray;
-color: #373832;
-cursor: pointer;
-border: 3px ridge olive;
-border-radius: 5px;
-display: inline-block;
-}
-
-input.MyButton:hover {
-color: #373832;
-background: gray;
-border: 3px ridge #373832;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -30,29 +11,70 @@ body  {
 
 header  {
   background-color:#A68A72;
-  border-radius: 10px;
   opacity: .7;
-  margin-bottom: 2em;
+  border-bottom: 3px ridge #373832;
+}
+
+#headshot {
+  height: auto;
+  width:20%;
+  margin: 2rem auto;
+  display: block;
 }
 
 h1  {
-  /*background-color: #804B4D;*/
+  background-color: #804B4D;
   color: #373832;
-  text-align:left;
+  text-align:center;
   font-family: fantasy;
-  width: 30%;
-  margin:1rem 5% 0;
-  float: left;
+  width: 20%;
+  margin:1rem auto 0;
+  display:block;
 }
 
 #disabled {
   pointer-events: none;
-  cursor: no-drop;
   opacity: .5;
 }
 .mainMenu {
   font-family: fantasy;
-  float:right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input.MyButton {
+  padding:1rem .25rem;
+  font-size: 1rem;
+  font-family: fantasy;
+  background: gray;
+  color: #373832;
+  cursor: pointer;
+  border-top: 3px ridge olive;
+  display: inline-block;
+  margin: 0 -.20rem;
+}
+
+input.MyButton:first-child  {
+  border-left: 3px ridge olive;
+}
+
+input.MyButton:last-child  {
+  border-right: 3px ridge olive;
+}
+
+input.MyButton:hover {
+  color: #373832;
+  background: #804B4D;
+  border-top: 3px ridge #373832;
+  font-weight: bolder;
+}
+
+input.MyButton:first-child:hover  {
+  border-left: 3px ridge #373832;
+}
+
+input.MyButton:last-child:hover  {
+  border-right: 3px ridge #373832;
 }
 
 #about  {
@@ -95,8 +117,7 @@ h1  {
 }
 footer {
   clear:both;
-  border-top-color: #373832;
-  border-top-style: ridge;
+  border-top: 3px ridge #373832;
   /*margin-top: 1rem;*/
   background-color: #A68A72;
   color: maroon;
@@ -110,14 +131,8 @@ footer ul li a {
     text-decoration:none;
     color:maroon;
 }
+
 footer ul li a:hover {
   color:gray;
   font-style: italic;
-}
-cite  {
-  float: right;
-  margin: .5rem 5%;
-}
-#giphy  {
-  text-align:center;
 }
