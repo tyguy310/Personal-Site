@@ -20,16 +20,23 @@ header  {
   width:20%;
   margin: 2rem auto;
   display: block;
+  opacity: .4;
 }
-
-h1  {
-  background-color: #804B4D;
-  color: #373832;
-  text-align:center;
-  font-family: fantasy;
-  width: 20%;
-  margin:1rem auto 0;
-  display:block;
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #804B4D;
+  font-family: monospace;
+}
+h2  {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  width: 30%;
+  border-top: 2px ridge #B8C7CD;
+  border-bottom: 2px ridge #B8C7CD;
 }
 
 #disabled {
